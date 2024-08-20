@@ -14,7 +14,7 @@ def draw():
     screen.clear()
     screen.fill(color = (128, 0, 0))
     alien.draw()
-    screen.draw.text(message, center = (400, 50), fontsize= 30)
+    screen.draw.text(message, center = (250, 50), fontsize= 30)
 
 def place_alien():
     alien.x = randint(50, WIDTH -50)
@@ -28,12 +28,19 @@ def on_mouse_down(pos):
 
     else:
         message = "You Missed"
+        place_alien()
 
 place_alien()
 pgzrun.go()
 
 
 
+    
+
+
+
+
+    
     
 
 
